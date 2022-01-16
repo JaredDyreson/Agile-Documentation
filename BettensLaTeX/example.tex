@@ -1,0 +1,19 @@
+\documentclass{article}
+
+\usepackage{csvsimple}
+
+\begin{document}
+
+\begin{table}[htpb]
+\begin{tabular}{|c|c|c|}
+
+\hline
+
+\bfseries \name & \bfseries \givenname & \bfseries \gender & 
+\csvreader[head to column names]{/home/jared/Projects/Agile-Documentation/BettensLaTeX/tables/HelloWorld.csv}{}
+{\\\hline \name & \givenname & \gender}
+\end{tabular}
+\end{table}
+    
+
+\end{document}
